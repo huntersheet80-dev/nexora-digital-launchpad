@@ -72,8 +72,8 @@ const HeroSection = () => {
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl">
-          <div className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-1.5 text-sm text-accent-foreground mb-8 fade-in-up">
-            <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
+          <div className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-3 py-1.5 text-xs sm:text-sm text-accent-foreground mb-6 sm:mb-8 fade-in-up">
+            <span className="w-2 h-2 rounded-full bg-accent animate-pulse flex-shrink-0" />
             AI-Powered Business Tools — 50+ Modern Solutions
           </div>
 
@@ -87,33 +87,33 @@ const HeroSection = () => {
               }`}
               style={{ position: i === current ? "relative" : "absolute" }}
             >
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-primary-foreground leading-[1.1] tracking-tight mb-6">
+              <h1 className="text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-extrabold text-primary-foreground leading-[1.1] tracking-tight mb-4 sm:mb-6">
                 {slide.title}{" "}
                 <span className="text-accent">{slide.highlight}</span>
               </h1>
-              <p className="text-lg md:text-xl text-primary-foreground/70 max-w-xl mb-10 leading-relaxed">
+              <p className="text-sm sm:text-lg md:text-xl text-primary-foreground/70 max-w-xl mb-6 sm:mb-10 leading-relaxed">
                 {slide.subtitle}
               </p>
             </div>
           ))}
 
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
             <Button
               onClick={() => navigate("/signup")}
-              className="gradient-primary text-accent-foreground rounded-full px-8 py-6 text-base font-semibold shadow-xl shadow-accent/30 hover:shadow-accent/50 hover:scale-105 transition-all duration-300 group"
+              className="gradient-primary text-accent-foreground rounded-full px-6 sm:px-8 py-5 sm:py-6 text-sm sm:text-base font-semibold shadow-xl shadow-accent/30 hover:shadow-accent/50 hover:scale-105 transition-all duration-300 group"
             >
               Start Free Trial
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={18} />
             </Button>
             <Button
               onClick={() => navigate("/tools")}
-              className="rounded-full px-8 py-6 text-base font-semibold border-2 border-accent/40 bg-accent/10 text-primary-foreground hover:bg-accent/20 hover:border-accent/60 transition-all duration-300"
+              className="rounded-full px-6 sm:px-8 py-5 sm:py-6 text-sm sm:text-base font-semibold border-2 border-accent/40 bg-accent/10 text-primary-foreground hover:bg-accent/20 hover:border-accent/60 transition-all duration-300"
             >
               View Tools
             </Button>
           </div>
 
-          <div className="mt-12 flex items-center gap-6 text-primary-foreground/50 text-sm">
+          <div className="mt-8 sm:mt-12 flex items-center gap-4 sm:gap-6 text-primary-foreground/50 text-xs sm:text-sm">
             <div className="flex -space-x-2">
               {[1, 2, 3, 4].map((i) => (
                 <div key={i} className="w-8 h-8 rounded-full bg-accent/30 border-2 border-primary/60 flex items-center justify-center text-xs font-bold text-accent-foreground">

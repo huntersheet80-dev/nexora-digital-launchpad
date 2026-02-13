@@ -4,7 +4,7 @@ import { Linkedin, Twitter, Facebook } from "lucide-react";
 const Footer = () => (
   <footer className="bg-primary text-primary-foreground">
     <div className="container mx-auto px-4 py-16">
-      <div className="grid md:grid-cols-4 gap-10">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-10">
         <div>
           <h3 className="text-lg font-bold mb-4">
             Nexora<span className="text-accent">Digital</span>
