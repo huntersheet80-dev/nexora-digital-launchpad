@@ -16,7 +16,7 @@ const Footer = () => (
         <div>
           <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider text-primary-foreground/50">Quick Links</h4>
           <ul className="space-y-2 text-sm">
-            {[["Home", "/"], ["About", "/about"], ["Contact", "/contact"]].map(([label, to]) => (
+            {[["Home", "/"], ["Tools", "/tools"], ["About", "/about"], ["Contact", "/contact"]].map(([label, to]) => (
               <li key={label}>
                 <Link to={to} className="text-primary-foreground/70 hover:text-accent transition-colors">{label}</Link>
               </li>
@@ -37,7 +37,7 @@ const Footer = () => (
           <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider text-primary-foreground/50">Connect</h4>
           <div className="flex gap-4">
             {[Linkedin, Twitter, Facebook].map((Icon, i) => (
-              <a key={i} href="#" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-accent transition-colors">
+              <a key={i} href="#" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-accent hover:scale-110 transition-all duration-300">
                 <Icon size={18} />
               </a>
             ))}
